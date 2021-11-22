@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/perfil.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+
+</head>
+<body>
+
+    <div id="page-perfil">
+        
+        <header>
+            <img src="/logo.svg" alt="Logomarca">
+
+            <a href="cadastro">
+                <span></span>
+                Sair da conta
+            </a>
+        </header>
+        
+        <div class="image-nome">
+            <div class="user one">
+            </div>
+            <h1><%= model.nome %></h1>
+        </div>
+        
+        <div class="dados">
+
+            <div class="descricao-tipo">
+                <div class="descricao">
+                    <h1>Descrição:</h1>
+                    <p contenteditable="true">Barbearia focada em cortes de cabelo, barba e sobrancelha com espaço recreativo para o lazer do cliente.</p>
+                </div>
+               
+                <div class="tipo">
+                    <h1>Tipo de salão:</h1>
+                    <p><%= model.tipo %></p>
+                </div>
+            </div>
+
+            <div class="endereco-localizacao">
+                <div class="endreco">
+                    <h1>Endereço:</h1>
+                    <p>Rua Francisco Portela, bairro Rodagem de Picos.</p>
+                </div>
+                <a href="https://goo.gl/maps/7rNbfQ4icG4dya5ZA"><span></span><strong>Localização</strong></a>
+            </div>
+
+            <div class="fone">
+                <h1>Telefone:</h1>
+                <p>089994116853</p>
+            </div>
+            
+
+            <div class="agenda" method="post">
+                <h1>Agenda do dia:</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horarios</th>
+                            <th>Disponibilidade</th>
+                            
+                        </tr>          
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>08:30</td>
+                            <td>Não Vago</td>
+                            
+                        </tr>            
+                        <tr>
+                            <td>09:00</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>09:30</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Vago</td>
+                        </tr>
+                        <tr>
+                            <td>10:30</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>11:30</td>
+                            <td>Vago</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Não Vago</td>
+                        </tr>
+                        <tr>
+                            <td>14:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>15:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>15:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>16:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>16:30</td>
+                            <td>Não Vago</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>17:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>18:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>18:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>19:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>19:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>20:00</td>
+                            <td>Não Vago</td>
+                        </tr>
+                        <tr>
+                            <td>20:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>21:00</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                        <tr>
+                            <td>21:30</td>
+                            <td>Não Vago</td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <button  name="horario">Editar Horarios</button>
+            </div>
+
+            <div class="op">
+                <button href="editarinformacao" >Editar Informações</button>
+                <button href="editarconta" >Editar Senha</button>
+            </div>
+
+        </div>
+    
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Conta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/editarconta.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+
+</head>
+<body>
+
+    <div id="page-cadastro">
+        <header>
+            <img src="/logo.svg" alt="Logomarca">
+            <a href="perfil">
+                <span></span>
+                Voltar para perfil
+            </a>
+        </header>
+
+        <form action="">
+            <h1>Atualize suas informações de cadastro</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>Insira os novo dados</h2>
+                </legend>
+
+                <div class="campo_grupo">
+                    <div class="campo">
+                        <label for="nomesalao">Digite o nome do salão</label>
+                         <input type="text" name="nomesalao">
+                    </div>
+                    <div class="campo">
+                        <label for="tipo">Tipo</label>
+                        <select name="tipos">
+                            <option value="">Selecione o Tipo</option>
+                            <option value="">Todos</option>
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                            <option value="">Unissex</option> 
+                            
+                        </select> 
+                    </div>
+
+                    
+                </div>
+
+                <div class="campo">
+                    <label for="cadastroEmail">Digite o email</label>
+                    <input type="text" name="cadastroEmail">
+                </div>
+
+                <div class="campo">
+                    <label for="cadastroEmail">Digite o email novmente</label>
+                    <input type="text" name="cadastroEmail">
+                </div>
+
+                <div class="campo_senha">
+                    <div class="campo">
+                        <label for="cadastroSenha">Digite a senha</label>
+                        <input type="text" name="cadastroSenha" id="pass2">
+                    </div>
+                        
+                    <img src="/assets/olho.svg" id="olho2" class="olho">
+                    
+                </div>
+
+                <div class="campo_senha">
+                    <div class="campo">
+                        <label for="cadastroSenhaNovamente">Digite a senha novamente</label>
+                        <input type="text" name="cadastroSenhaNovamente" id="pass3">
+                    </div>
+                        
+                    <img src="/assets/olho.svg" id="olho3" class="olho">
+                    
+                </div>
+
+                <button type="submit">Cadastrar</button>
+
+            </fieldset>
+        </form>
+    </div>
+    
+    <script src="/scripts/editarconta.js"></script>
+
+</body>
+</html>

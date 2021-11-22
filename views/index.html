@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
+    <script type="text/javascript" src="script.js"></script> 
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente seu corte aqui</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type = "text/css" href="/styles/main.css">
+    <link rel="stylesheet" type = "text/css" href="/styles/home.css">
+    <link rel="stylesheet" type = "text/css" href="/styles/responsive.css">
+
+
+</head>
+<body>
+
+    <div id="page-home">
+        <div class="content">
+            <header>
+                <img src="/logo.svg" alt="Logomarca">
+
+                <a href="cadastro">
+                    <span></span>
+                    Entrar/Cadastrar
+                </a>
+                
+            </header>
+            
+            <main>
+                <h1>Encontre e marque seu corte de cabelo e outros trabalhos estéticos.</h1>
+
+                <p>Evite sair de casa para marcar horários em salões de beleza correndo riscos na pandemia e perda de tempo.</p>
+
+            </main>
+
+
+            <div class="divConteudo">
+                <h1>Procure seu salão aqui:</h1>
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Ver perfil</th>
+                            
+                        </tr>
+                        <tr>
+                            <th><input type="text" id="txtColuna1"/></th>
+                            <th>
+                                <select type="text" name="tipo" id="sclStatus"">
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="Todos">Todos</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>    
+                                </select>
+                            </th>
+                            <th><th>
+                            
+                        </tr>            
+                    </thead>
+                    <tbody>
+                        <% for (const index of model){ %>
+                            <tr>
+                                <td> <%= index.nome %> </td>
+                                <td><%= index.tipo %></td>
+                                <td><a href="cliente/<%= index.id %>">
+                                        <span></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        <% } %>
+                      
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+    
+    <script src="/scripts/home.js"></script>
+</body>
+</html>

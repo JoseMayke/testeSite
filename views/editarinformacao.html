@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Informações</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/editarinformacao.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+
+</head>
+<body>
+
+    <div id="page-informacao">
+        <header>
+            <img src="/logo.svg" alt="Logomarca">
+            <a href="perfil">
+                <span></span>
+                Voltar para perfil
+            </a>
+        </header>
+
+        <form action="">
+            <h1>Edite suas informções</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>Informe</h2>
+                </legend>
+
+                <div class="campo">
+                    <label for="descricao">Digite a descrição</label>
+                    <input type="text" name="descricao">
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Digite o endereço</label>
+                    <input type="text" name="endereco">
+                </div>
+
+                <div class="campo">
+                    <label for="local">Informe a localização</label>
+                    <input type="text" name="local">
+                </div>
+
+                <div class="campo">
+                    <label for="numero">Digite o número do WhatsApp</label>
+                    <input type="text" name="numero">
+                </div>
+                <div class="campo">
+                    <label for="imagem">Foto do perfil</label>
+                    <input type="file" name="imagem">
+                </div>
+                <button type="submit">Salvar</button>
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
