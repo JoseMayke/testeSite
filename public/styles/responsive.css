@@ -1,0 +1,145 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 100vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header {
+        flex-direction: column;
+    }
+
+    #page-home header a {
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    #page-home main {
+        margin-top: 24px;
+        align-items: center;
+    }
+    
+    #page-home table input{
+        padding: 0;
+        margin-left: 0;
+    
+    }
+    
+    #page-home table select{
+        padding: 0;
+        margin-left: 0;
+    }
+
+
+    #page-entrar-cadastro header, #page-informacao header, #page-agenda header, #page-cadastro header{
+        flex-direction: column;
+    }
+    #page-entrar-cadastro header a, #page-informacao header a, #page-agenda header a, #page-cadastro header a {
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    #page-perfil, #page-cliente {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-perfil .descricao-tipo, .endereco-localizacao {
+        flex-direction: column;
+    }
+
+    #page-perfil .tipo,  .endereco-localizacao a{
+        margin-top: 20px;
+    }
+
+    #page-cliente .descricao-tipo, .endereco-localizacao {
+        flex-direction: column;
+    }
+
+    #page-cliente .tipo,  .endereco-localizacao a{
+        margin-top: 20px;
+    }
+
+
+
+    #page-agenda form .campo_grupo {
+        flex-direction: column;
+    }
+
+    #page-agenda form .campo_grupo .campo + .campo {
+        margin-left: 0px;
+
+}
+
+
+
+@media (max-width: 420px) {
+    #page-entrar-cadastro form, #page-informacao form, #page-agenda form,  #page-cadastro form {
+        max-width: 330px;
+        padding: 32px;
+    }
+
+    #page-entrar-cadastro form input {
+        padding: 16px 0px;
+    }
+
+    #page-entrar-cadastro form .campo_grupo,  #page-cadastro form .campo_grupo{
+        flex-direction: column;
+    }
+    #page-entrar-cadastro  form .campo_grupo .campo + .campo {
+        margin-left: 0px;
+    }
+
+    #page-entrar-cadastro  form .campo_grupo .campo + .campo {
+        margin-left: 0px;
+    }
+    
+    #page-cadastro  form .campo_grupo .campo + .campo {
+        margin-left: 0px;
+    }
+
+    #page-entrar-cadastro form select {
+        padding: 16px 0px;
+    }
+
+    #page-perfil header {
+        flex-direction: column;
+    }
+
+    #page-perfil header a {
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    #page-perfil .op {
+        flex-direction: column;
+    }
+
+    #page-cliente  header {
+        flex-direction: column;
+    }
+
+    #page-cliente  header a {
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 110px;
+    }
+}
+}

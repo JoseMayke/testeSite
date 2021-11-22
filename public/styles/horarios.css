@@ -1,0 +1,176 @@
+#page-agenda {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-agenda header {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-agenda header img {
+    width: 250px;
+    height: 57px;
+}
+
+#page-agenda header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-agenda header a span {
+    margin-right: 16px;
+    background-image: url('/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+form {
+    background-color: white;
+    margin: 80px auto;
+    padding: 64px;
+    border-radius: 8px;
+    max-width: 730px;
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+
+form .campo_grupo {
+    display: flex;
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+form select {
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+form .campo_grupo .campo + .campo {
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primery-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
+
+#page-agenda table {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width:50%;
+    border:solid 1px;
+    text-align:center;
+    border-collapse:collapse;
+    
+    max-height: 50px;
+
+}
+
+
+/*
+#page-home table tbody {
+    display: table;
+    width: 100%;
+  }
+*/
+
+#page-agenda table tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+ 
+#page-agenda table thead{
+    background: var( --primery-color);
+}
+ 
+#page-agenda table thead th:nth-child(1){
+    width:100px;
+}
+ 
+#page-agenda table input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:var(--title-color);
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 0;
+    margin-left: 10px;
+
+}
+
+#page-agenda table select{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 24px;
+    color:var(--title-color);
+    border-radius: 8px;
+    border: 0;
+    text-align: center;
+    margin-left: 10px;
+}
+

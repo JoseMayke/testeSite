@@ -1,0 +1,135 @@
+#page-home {
+    height: 100vh;
+    background: url('/home.svg') no-repeat;
+    background-position: 60vw bottom;
+}
+
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header img {
+    width: 250px;
+    height: 57px;
+}
+
+#page-home header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+    background-image: url('/log-in.svg');
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    margin-top: 24px;
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1 {
+    font-size: 54px;
+}
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+
+
+#page-home .divConteudo {
+    margin-top: 120px;
+    text-align: center;
+}
+
+
+#page-home table {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width:50%;
+    border:solid 1px;
+    text-align:center;
+    border-collapse:collapse;
+    
+    max-height: 50px;
+
+}
+
+
+/*
+#page-home table tbody {
+    display: table;
+    width: 100%;
+  }
+*/
+
+#page-home table tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+ 
+#page-home table thead{
+    background: var( --primery-color);
+}
+ 
+#page-home table thead th:nth-child(1){
+    width:100px;
+}
+ 
+#page-home table input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:var(--title-color);
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 0;
+    margin-left: 10px;
+
+}
+
+#page-home table select{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 24px;
+    color:var(--title-color);
+    border-radius: 8px;
+    border: 0;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#page-home table a span {
+    margin-left: 15px;
+    display: flex;
+    background-image: url('/log-in.svg');
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,205 @@
+#page-cliente {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-cliente header {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-cliente header img {
+    width: 250px;
+    height: 57px;
+}
+
+#page-cliente header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-cliente header a span {
+    margin-right: 16px;
+    background-image: url('/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+#page-cliente .image-nome {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.user {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+.one {
+    background-image: url('/imagem.png');
+}
+
+#page-cliente .image-nome h1 {
+    margin-left: 24px;
+}
+
+#page-cliente .dados {
+    margin-top: 48px;
+}
+
+#page-cliente .dados h1 {
+    font-size: 30px;
+}
+
+#page-cliente .dados p {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 700px;
+}
+
+#page-cliente .dados .descricao-tipo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-cliente .descricao p{
+    margin-top: 10px;
+}
+
+#page-cliente .endereco-localizacao {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#page-cliente .endereco-localizacao a {
+    width: 100%;
+    max-width: 200px;
+    height: 72px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+   
+
+    background-color: var(--primery-color);
+
+    transition: 400ms;
+}
+
+#page-cliente .endereco-localizacao a:hover {
+    background-color: #2fb86e;
+}
+
+#page-cliente .endereco-localizacao a span {
+    width: 72px;
+    height: 72px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-cliente .endereco-localizacao a span::after {
+    content: "";
+    background-image: url('/localizacao.svg');
+    width: 20px;
+    height: 20px;
+}
+
+
+#page-cliente .endereco-localizacao a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+#page-cliente .fone {
+    margin-top: 20px;
+}
+
+#page-cliente .agenda {
+    margin-top: 120px;
+    text-align: center;
+    height: 100px;
+}
+
+#page-cliente table {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width:50%;
+    border:solid 1px;
+    text-align:center;
+    border-collapse:collapse;
+}
+
+#page-cliente table tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+
+#page-cliente table thead{
+    background: var( --primery-color);
+}
+ 
+#page-cliente button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primery-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 10px;
+    transition: background-color 400ms;
+}
+
+#page-cliente button:hover {
+    background-color: #2fb86e;
+}
+
+#page-cliente .zap {
+    margin-top: 850px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#page-cliente .zap img {
+    height: 60px;
+    width: 60px;
+}
